@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text , TouchableOpacity , Image} from 'react-native';
 import {firebaseApp} from '../components/FireBaseConfig';
+import RNFetchBlob from 'rn-fetch-blob';
 var ImagePicker = require('react-native-image-picker');
 var options = {
     title: 'Select Avatar',

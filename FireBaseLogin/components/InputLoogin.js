@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { 
   View , Text , StyleSheet, TextInput,TouchableOpacity , Alert
 } from 'react-native';
- 
-//import {firebaseApp} from './FireBaseConfig';
+// import {firebaseApp} from './FireBaseConfig';
 // trên android thì component này chạy ko dc , ios thi ok Vì import {firebaseApp} from './FireBaseConfig';
 export default class InputLoogin extends Component {
     constructor(props){
@@ -15,7 +14,7 @@ export default class InputLoogin extends Component {
       }
    
     DangNhap(){
-        firebaseApp.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+      firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
         .then(()=> {
            Alert.alert(
              'Alert Title',
